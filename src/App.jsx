@@ -3,15 +3,24 @@ import "./app.scss";
 
 import Dock from "./components/Dock";
 import Nav from "./components/Nav";
-import DateTime from "./components/DateTime";
 
 import Github from "./components/windows/Github";
 import Note from "./components/windows/Note";
-import Resume from "./components/windows/resume";
+import Resume from "./components/windows/Resume";
 import Spotify from "./components/windows/Spotify";
 import Cli from "./components/windows/Cli";
 
+import BootScreen from "./auth/BootScreen";
+import LoginScreen from "./auth/LoginScreen";
+
 const App = () => {
+  // Boot Screen
+  const [bootComplete, setBootComplete] = useState(false);
+
+  // Login Screen
+  const [loggedIn, setLoggedIn] = useState(false);
+
+  // Desktop Windows
   const [windowsState, setWindowsState] = useState({
     github: false,
     note: false,
@@ -20,15 +29,68 @@ const App = () => {
     cli: false,
   });
 
+  // Show Apple Boot Screen
+  if (!bootComplete) {
+    return (
+      <BootScreen
+        onFinish={() => setBootComplete(true)}
+      />
+    );
+  }
+
+  // Show Login Screen
+  if (!loggedIn) {
+    return (
+      <LoginScreen
+        onLogin={() => setLoggedIn(true)}
+      />
+    );
+  }
+
+  // Your ORIGINAL macOS Desktop
   return (
     <main>
       <Nav />
-      <Dock windowsState={windowsState} setWindowsState={setWindowsState} />
-      { windowsState.github && <Github windowName="github" setWindowsState={setWindowsState} />}
-      { windowsState.note && <Note windowName="note" setWindowsState={setWindowsState} />}
-      { windowsState.resume && <Resume windowName="resume" setWindowsState={setWindowsState} />}
-      { windowsState.spotify && <Spotify windowName="spotify" setWindowsState={setWindowsState} />}
-      { windowsState.cli && <Cli windowName="cli" setWindowsState={setWindowsState} />}
+
+      <Dock
+        windowsState={windowsState}
+        setWindowsState={setWindowsState}
+      />
+
+      {windowsState.github && (
+        <Github
+          windowName="github"
+          setWindowsState={setWindowsState}
+        />
+      )}
+
+      {windowsState.note && (
+        <Note
+          windowName="note"
+          setWindowsState={setWindowsState}
+        />
+      )}
+
+      {windowsState.resume && (
+        <Resume
+          windowName="resume"
+          setWindowsState={setWindowsState}
+        />
+      )}
+
+      {windowsState.spotify && (
+        <Spotify
+          windowName="spotify"
+          setWindowsState={setWindowsState}
+        />
+      )}
+
+      {windowsState.cli && (
+        <Cli
+          windowName="cli"
+          setWindowsState={setWindowsState}
+        />
+      )}
     </main>
   );
 };

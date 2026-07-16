@@ -4,19 +4,16 @@
   box-sizing: border-box;
 }
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
 }
 
 body {
-  background-color: black;
-}
-
-main {
-  height: 100%;
-  width: 100%;
-  background-image: url("/MAC-OS/public/mac-wallpaper.jpg");
+  background: black;
+  overflow: hidden;
 }
 
 main {
@@ -26,4 +23,5 @@ main {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }/*# sourceMappingURL=app.css.map */

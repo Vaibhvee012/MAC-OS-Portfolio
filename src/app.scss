@@ -4,24 +4,24 @@
   box-sizing: border-box;
 }
 
-html, body , #root{
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
-  
 }
 
-body{
-    background-color:black;
+body {
+  background: black;
+  overflow: hidden;
 }
-main{
-    height: 100%;
-    width: 100%;
-    background-image: url('/MAC-OS/public/mac-wallpaper.jpg');
-}main {
+
+main {
   height: 100%;
   width: 100%;
   background-image: url("/mac-wallpaper.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
