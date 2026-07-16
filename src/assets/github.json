@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&q=80&w=1000",
+    "title": "Project Demo",
+    "description": "My first Git repository — created to learn the fundamentals of version control, commits, and working with GitHub.",
+    "tags": ["Git", "GitHub", "Version Control"],
+    "repoLink": "https://github.com/Vaibhvee012/project-demo",
+    "demoLink": null
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000",
+    "title": "LocalRepo",
+    "description": "A local practice repository used for experimenting with Git workflows, branching, and repository management.",
+    "tags": ["Git", "GitHub"],
+    "repoLink": "https://github.com/Vaibhvee012/localrepo",
+    "demoLink": null
+  },
+  {
+    "id": 3,
+    "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&q=80&w=1000",
+    "title": "ProjectFrontEndDemo — Front-End Design Showcase",
+    "description": "A collection of simple and unique front-end UI designs built to practice layout, styling, and creative CSS techniques.",
+    "tags": ["HTML", "CSS"],
+    "repoLink": "https://github.com/Vaibhvee012/ProjectFrontEndDemo",
+    "demoLink": null
+  },
+  {
+    "id": 4,
+    "image": "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=1000",
+    "title": "Resume",
+    "description": "Source code for a personal resume/portfolio page, showcasing skills, education, and project experience.",
+    "tags": ["HTML", "CSS"],
+    "repoLink": "https://github.com/Vaibhvee012/RESUME",
+    "demoLink": null
+  },
+  {
+    "id": 5,
+    "image": "https://images.unsplash.com/photo-1763568258533-d0597f86ce62?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "title": "Lumo Candles — Home Page",
+    "description": "A stylish, modern homepage design for a candle brand, built with TypeScript to explore typed front-end development.",
+    "tags": ["TypeScript", "HTML", "CSS"],
+    "repoLink": "https://github.com/Vaibhvee012/Lumo-Candels-Home-Page",
+    "demoLink": null
+  },
+  {
+    "id": 6,
+    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1000",
+    "title": "Codveda Web Development Internship",
+    "description": "Web development projects and tasks completed during the Codveda Technology internship program, covering core HTML, CSS, and JS concepts.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "repoLink": "https://github.com/Vaibhvee012/codveda-web-development-internship",
+    "demoLink": null
+  }
+]

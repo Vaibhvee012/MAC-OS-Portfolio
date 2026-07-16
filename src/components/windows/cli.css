@@ -1,0 +1,34 @@
+.cli-window {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.cli-window div[name=react-console-emulator] {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  color: #00ff00;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.cli-window div[name=react-console-emulator__content] {
+  font-family: "Menlo", "Courier New", monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #d7ffd7;
+  min-height: 100%;
+}
+.cli-window input[name=react-console-emulator__input] {
+  background: transparent;
+  color: #00ff00;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 1rem;
+}/*# sourceMappingURL=cli.css.map */
