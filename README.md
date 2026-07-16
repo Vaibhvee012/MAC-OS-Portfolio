@@ -1,4 +1,4 @@
-# 🍎 macOS Portfolio
+# 🍎 MAC-OS Portfolio
 
 A modern macOS-inspired personal portfolio built with **React**, **Vite**, and **SCSS**. The application recreates the macOS desktop experience with draggable windows, an interactive dock, and a built-in terminal showcasing my projects, skills, and experience.
 
